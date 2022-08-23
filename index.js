@@ -5,7 +5,7 @@ const io = require('socket.io')(server, {
   },
 });
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 const NEW_BUZZ_EVENT = 'new_buzz_event';
 const NEW_USER_EVENT = 'new_user_event';
 
